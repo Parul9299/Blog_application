@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.aniMainBox {
+    margin-top: 10px;
+    /* border: 2px solid red; */
+}
+
+.ani-box {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    display: flex;
+    /* margin-top: 10px; */
+    /* padding: 0 50px 40px 50px; */
+    /* padding-bottom: 40px; */
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.158);
+    animation: name 1s linear infinite alternate;
+}
+
+
+@keyframes name {
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.ani-box:hover {
+    animation: none;
+}
+
+.ani-box .ani-img {
+    width: auto;
+    height: inherit;
+    position: relative;
+}
+
+.ani-box .ani-img img {
+    position: absolute;
+    border-radius: 8px;
+}
+
+.ani-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ani-date small {
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    cursor: pointer;
+}
+
+.ani-date .download-e-book {
+    height: 40px;
+    background-color: #1ABC9C;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 7px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    cursor: pointer;
+}
+
+.ani-date .download-e-book i {
+    font-size: 13px;
+}
+
+.ani-about h2 {
+    font-weight: 700;
+}
+
+.ani-about p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+.video-box,
+.audio-box {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.audio-box i {
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #0056d2;
+}
+
+.play-btn {
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.play-btn::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #fff;
+    border-radius: 2px;
+}
+
+.play-btn::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 8px solid rgb(255, 0, 0);
+    border-radius: 50%;
+    animation: wavy 1s;
+    animation-delay: 0s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps;
+}
+
+@keyframes wavy {
+    0% {
+        transform: scale(0.6);
+        opacity: 1;
+        border-color: rgba(255, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+/* ------------------mainLongParagraph */
+
+.mainLongParagraph {
+    width: 100%;
+    margin-top: 150px;
+    padding-bottom: 70px;
+    /* border: 2px solid green; */
+}
+
+/* -----------------------longParagraph */
+.longParagraph {
+    width: 82%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    /* margin-left: 90px; */
+    padding: 0 20px 20px 20px;
+    position: relative;
+}
+
+/* ----------------------longParaHeading */
+.longParaHeading {
+    width: 90%;
+    background-color: #f0f8ff;
+    border: 1px solid #0056d2;
+    border-radius: 10px;
+    /* margin-left: 35px; */
+    margin-top: -60px;
+}
+
+.longParaHeading p {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.tooltip_btn {
+    width: 80px;
+    height: 25px;
+    padding: 0;
+    bottom: 0;
+    right: 120px;
+    margin-bottom: 3px;
+    background-color: darkslategrey;
+    outline-color: darkslategray;
+}
+
+.tooltip_btn:hover {
+    background-color: darkslategrey;
+}
+
+.longParaContent p {
+    font-size: 17.8px;
+    font-weight: 400;
+}
+
+.latestNews {
+    padding-top: 20px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.news-box {
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    background-color: #faebd7;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 30px;
+}
+
+.news-box p {
+    margin: 8px;
+}
+
+.news-box a {
+    text-decoration: none;
+}
+
+.highLight p {
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+table thead tr th,
+table tbody tr td {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.whyOnlie {
+    padding-top: 20px;
+}
+
+.whyOnlie a {
+    text-decoration: none;
+}
+
+.whyOnlie img {
+    width: 100%;
+}
+
+.mainLIst li {
+    list-style: none;
+}
+
+.mainLIst li {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.mainLIst li i {
+    font-size: 18px;
+    color: #0056d2;
+}
+
+.table p {
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+.onlineAdmissionProcedure {
+    padding: 20px 0;
+}
+
+.jobOpportunities p {
+    text-align: center;
+}
+
+.jobOpportunities p img {
+    width: 700px;
+}
+
+/* ------------------------carousel box----------------------- */
+
+.chooseUniversity {
+    width: 100%;
+    background-image: url(https://img.freepik.com/free-vector/white-background-gradient-modern-abstract-design-wave_343694-2337.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    padding: 50px 150px 50px 150px;
+}
+
+.chooseUniversity .title {
+    padding-top: 100px;
+}
+
+.chooseUniversity .title h2 {
+    font-weight: 400;
+}
+
+.chooseUniversity .title h2 span {
+    color: #f75d34;
+}
+
+.chooseUniversity .title h2 i {
+    font-size: 20px;
+    margin-left: -5px;
+}
+
+.chooseUniversity .person {
+    width: 94%;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.chooseUniversity .person .icon {
+    border-bottom: 1px solid #999;
+}
+
+.chooseUniversity .person .icon p {
+    font-size: 13px;
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.chooseUniversity .person .info p {
+    color: #777;
+    margin: 5px;
+}
+
+.chooseUniversity .person .info {
+    padding: 15px 0 15px 0;
+}
+
+.chooseUniversity .person .info .en {
+    color: #0056d2;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.chooseUniversity .person .info .btn {
+    width: 100%;
+    height: 35px;
+    background-color: #0056d2;
+    color: #fff;
+    padding: 0;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------accordionBox */
+
+.accordionBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.accordionBox .heading h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.accordionBox .heading h2 span {
+    color: #0056d2;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.accordion .accordion-item {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper hr {
+    border: none;
+    border-top: 1px solid #cccccc;
+    visibility: visible;
+}
+
+.accordion .accordion-item.open .accordion-item-description-wrapper hr {
+    visibility: visible;
+}
+
+.accordion .accordion-item .accordion-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.accordion .accordion-item .accordion-item-header .count {
+    width: 25px;
+    height: 25px;
+    background-color: #0056d2;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 17px;
+    margin-top: 4px;
+}
+
+.accordion .accordion-item .accordion-item-header .accordion-item-header-title {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.accordion .accordion-item .accordion-item-header .accordion-item-header-icon {
+    transition: all 0.2s ease;
+}
+
+.accordion .accordion-item.open .accordion-item-header .accordion-item-header-icon {
+    transform: rotate(-180deg);
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.accordion .accordion-item.open .accordion-item-description-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description {
+    min-height: 0;
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description p {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.accordionBox .bgprimary {
+    background-color: aliceblue;
+    font-size: 14px;
+    color: #0056d2;
+    font-weight: 700;
+}
+
+.CV {
+    padding: 30px 0;
+}
+
+.CV .CV-title h3 {
+    color: #0056d2;
+    font-weight: 700;
+}
+
+.CV .CV-title p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.CV .CV-title a {
+    background-color: #0056d2;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 14px;
+    padding: 0 75px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    background-color: #0056d2;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 100%;
+    bottom: 25px;
+    left: 25px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 55px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    visibility: hidden;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ------------------------------------------Responsive--------------------------------- */
+
+
+@media (max-width: 1024px) {
+    .ani-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .longParaHeading {
+        margin-left: 30px;
+    }
+
+    .hiringBox p img {
+        width: 450px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .ani-box {
+        width: 100%;
+        height: auto;
+        display: block;
+        animation: none;
+    }
+
+    .ani-desc {
+        padding: 670px 10px 0 10px;
+    }
+
+    .mainLongParagraph {
+        margin-top: 100px;
+    }
+
+    .onlineAdmissionProcedure p img {
+        height: 500px;
+    }
+
+    .jobOpportunities p img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .hiringBox p img {
+        width: 450px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .ani-desc {
+        padding: 390px 10px 0 10px;
+    }
+
+    .longParaHeading {
+        width: 100%;
+    }
+
+    .longParaHeading .text{
+        padding: 0 15px;
+    }
+
+    .longParaHeading .text .en{
+        padding: 0 5px;
+    }
+
+    .longParagraph {
+        width: 100%;
+    }
+
+    .onlineAdmissionProcedure p img {
+        height: 300px;
+    }
+
+    .jobOpportunities p img {
+        width: 250px;
+        height: 180px;
+    }
+
+    .hiringBox p img {
+        width: 350px;
+    }
+
+    .chooseUniversity {
+        padding: 20px 0;
+    }
+
+    .chooseUniversity .title {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .accordion .accordion-item .accordion-item-header .count {
+        width: 35px;
+        height: 30px;
+    }
+
+    footer p {
+        padding: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .ani-desc {
+        padding: 350px 10px 0 10px;
+    }
+
+    .longParaHeading .text{
+        padding: 0 10px;
+    }
+
+    .longParaHeading .text .en{
+        padding: 0 5px;
+    }
+
+    .onlineAdmissionProcedure p img {
+        height: 200px;
+    }
+
+    .jobOpportunities p img {
+        width: 300px;
+        height: 180px;
+    }
+
+    .hiringBox p img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ani-desc {
+        padding: 290px 10px 0 10px;
+    }
+
+    .ani-date .download-e-book {
+        line-height: 10px;
+    }
+
+    .mainLongParagraph p {
+        font-size: 14px;
+    }
+
+    .onlineAdmissionProcedure p img {
+        height: 180px;
+    }
+
+    .jobOpportunities p img {
+        width: 250px;
+        height: 180px;
+    }
+
+    .hiringBox p img {
+        width: 250px;
+    }
+}
